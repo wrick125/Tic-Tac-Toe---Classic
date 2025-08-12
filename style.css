@@ -1,0 +1,135 @@
+* {
+    color: #222;
+    font-family: sans-serif;
+    transition: 0.2s ease-in-out;
+    user-select: none;
+}
+
+.align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: #e5effc;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    text-align: center;
+    padding-top: 2vh;
+}
+
+.turn-container {
+    width: 170px;
+    height: 80px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+}
+
+.turn-container h3 {
+    margin: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    color: #004080;
+}
+
+.turn-container .turn-box {
+    border: 3px solid #004080;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.turn-container .turn-box:nth-child(even) {
+    border-right: none;
+}
+
+.bg {
+    position: absolute;
+    bottom: 0;
+    left: 85px;
+    width: 85px;
+    height: 40px;
+    background-color: #FFD93D;
+    z-index: -1;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 250px;
+    width: 250px;
+    margin: 30px auto;
+    border: 2px solid #004080;
+    background-color: #fff;
+}
+
+.box {
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 700;
+    border: 2px solid #004080;
+}
+
+.box:hover {
+    background-color: #FFD93D;
+}
+
+#play-again {
+    background-color: #004080;
+    color: #fff;
+    padding: 10px 25px;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+#play-again:hover {
+    padding: 10px 40px;
+    background-color: #FFD93D;
+    color: #000;
+}
+#reset-game {
+    background-color: #004080;
+    color: #fff;
+    padding: 10px 25px;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline;
+}
+
+#reset-game:hover {
+    padding: 10px 40px;
+    background-color: #FFD93D;
+    color: #000;
+}
+
+#mute-unmute{
+    background-color: #f15e08;
+    color: #fff;
+    padding: 6px 15px;
+    border: none;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 70vw;
+    
+}
+#mute-unmute:hover {
+    padding: 6px 12px;
+    background-color: #f44b03;
+    color: #000;
+}
+#mute-unmute img{
+    width: 20px;
+    display: flex;
+
+}

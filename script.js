@@ -129,7 +129,7 @@ document.querySelector("#reset-game").addEventListener("click", ()=>{
 
 audioTurn.play();
 music.loop = true; 
-music.volume = 0.3;
+music.volume = 0.1;
 
 
 let isMuted = true;

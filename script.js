@@ -127,11 +127,12 @@ document.querySelector("#reset-game").addEventListener("click", ()=>{
     })
 })
 
-music.loop = true;   // make it loop forever
+audioTurn.play();
+music.loop = true; 
 music.volume = 0.5;
-music.play();        // start playing
 
-let isMuted = false;
+
+let isMuted = true;
 
 document.querySelector("#mute-unmute").addEventListener("click", () => {
     let img = document.querySelector("#mute-unmute img");
@@ -140,13 +141,13 @@ document.querySelector("#mute-unmute").addEventListener("click", () => {
         // Mute
         music.pause();
         img.src = "mute.svg";
-        img.alt = "Mute";
+        img.alt = "mute";
         isMuted = true;
     } else {
         // Unmute
         music.play();
         img.src = "unmute.svg";
-        img.alt = "Unmute";
+        img.alt = "unmute";
         isMuted = false;
     }
 });
